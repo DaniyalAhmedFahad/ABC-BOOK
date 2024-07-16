@@ -12,41 +12,46 @@
 </head>
 
 <body>
-    <audio autoplay loop>
+    <audio autoplay loop> 
         <source src="abc-song.mp3">
-    </audio>
+   </audio>
     <img src="download.jpeg" alt="" class="headerpic">
-    <a href="" class="scroltotop" title="scroll to top"></a>
+    <a href="#" class="scroltotop" title="scroll to top"></a>
+    <div id="navbar">
     <hr class="hr">
-    <div class="button">
-        <h2><a href="#a">A</a></h2>
-        <h2><a href="#b">B</a></h2>
-        <h2><a href="#c">C</a></h2>
-        <h2><a href="#d">D</a></h2>
-        <h2><a href="#e">E</a></h2>
-        <h2><a href="#f">F</a></h2>
-        <h2><a href="#g">G</a></h2>
-        <h2><a href="#h">H</a></h2>
-        <h2><a href="#i">I</a></h2>
-        <h2><a href="#j">J</a></h2>
-        <h2><a href="#k">K</a></h2>
-        <h2><a href="#l">L</a></h2>
-        <h2><a href="#m">M</a></h2>
-        <h2><a href="#n">N</a></h2>
-        <h2><a href="#o">O</a></h2>
-        <h2><a href="#p">P</a></h2>
-        <h2><a href="#q">Q</a></h2>
-        <h2><a href="#r">R</a></h2>
-        <h2><a href="#s">S</a></h2>
-        <h2><a href="#t">T</a></h2>
-        <h2><a href="#u">U</a></h2>
-        <h2><a href="#v">V</a></h2>
-        <h2><a href="#w">W</a></h2>
-        <h2><a href="#x">X</a></h2>
-        <h2><a href="#y">Y</a></h2>
-        <h2><a href="#z">Z</a></h2>
-    </div>
+    
+
+        <div class="button">
+            <h2><a href="#a">A</a></h2>
+            <h2><a href="#b">B</a></h2>
+            <h2><a href="#c">C</a></h2>
+            <h2><a href="#d">D</a></h2>
+            <h2><a href="#e">E</a></h2>
+            <h2><a href="#f">F</a></h2>
+            <h2><a href="#g">G</a></h2>
+            <h2><a href="#h">H</a></h2>
+            <h2><a href="#i">I</a></h2>
+            <h2><a href="#j">J</a></h2>
+            <h2><a href="#k">K</a></h2>
+            <h2><a href="#l">L</a></h2>
+            <h2><a href="#m">M</a></h2>
+            <h2><a href="#n">N</a></h2>
+            <h2><a href="#o">O</a></h2>
+            <h2><a href="#p">P</a></h2>
+            <h2><a href="#q">Q</a></h2>
+            <h2><a href="#r">R</a></h2>
+            <h2><a href="#s">S</a></h2>
+            <h2><a href="#t">T</a></h2>
+            <h2><a href="#u">U</a></h2>
+            <h2><a href="#v">V</a></h2>
+            <h2><a href="#w">W</a></h2>
+            <h2><a href="#x">X</a></h2>
+            <h2><a href="#y">Y</a></h2>
+            <h2><a href="#z">Z</a></h2>
+        </div>
+    
     <hr class="hr">
+</div>
     <main class="main-container">
         <div><br></div>
         <div><br></div>
@@ -413,6 +418,22 @@
             </div>
 
         </div>
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+
     </main>
 </body>
 

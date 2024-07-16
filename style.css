@@ -120,3 +120,29 @@ a:hover{
   color: #888888;
 
 }
+
+
+
+#navbar {
+  overflow: hidden;
+
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
