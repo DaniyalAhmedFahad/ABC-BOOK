@@ -110,13 +110,15 @@
   border-radius: 5px;
 
 }
-a{
+
+a {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
   font-size: larger;
   font-family: "Rubik", sans-serif;
 }
-a:hover{
+
+a:hover {
   color: #888888;
 
 }
@@ -125,24 +127,7 @@ a:hover{
 
 #navbar {
   overflow: hidden;
-
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  text-align: center;
-}
-
-
-
-
-.sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
+  z-index: 100;
 }

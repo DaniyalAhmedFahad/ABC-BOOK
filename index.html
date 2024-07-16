@@ -17,7 +17,7 @@
    </audio>
     <img src="download.jpeg" alt="" class="headerpic">
     <a href="#" class="scroltotop" title="scroll to top"></a>
-    <div id="navbar">
+    <nav id="navbar">
     <hr class="hr">
     
 
@@ -51,7 +51,7 @@
         </div>
     
     <hr class="hr">
-</div>
+    </nav>
     <main class="main-container">
         <div><br></div>
         <div><br></div>
@@ -418,20 +418,6 @@
             </div>
 
         </div>
-        <script>
-            window.onscroll = function () { myFunction() };
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-        </script>
 
 
     </main>
