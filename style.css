@@ -8,6 +8,9 @@
   width: 97%;
   text-align: center;
 }
+*{
+  scroll-behavior: smooth;
+}
 
 .headerpic {
   display: block;
